@@ -13,7 +13,7 @@ You will need to have a DNS server forwarding queries to the machine your docker
 Run the steamcache container with the using the following to allow TCP port 80 (HTTP) through the host machine:
 
 ```
-docker run --name twitch -p 192.168.0.5:80:80 steamcache/twitch:latest
+docker run --name twitch -p 192.168.0.6:80:80 steamcache/twitch:latest
 ```
 ## Quick Explanation
 
