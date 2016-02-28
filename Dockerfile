@@ -27,6 +27,6 @@ EXPOSE 80
 
 WORKDIR /scripts
 
-ENV TWITCHCACHE_IP 0.0.0.0
+ENV STEAMCACHE_IP 0.0.0.0
 
 ENTRYPOINT ["/scripts/bootstrap.sh"]
