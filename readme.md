@@ -48,6 +48,10 @@ Each stream consumed will require up to 3.5mbps of bandwidth, so on a gigabit ne
 Follow the instructions in the Docker documentation to run the container at startup.
 [Documentation](https://docs.docker.com/articles/host_integration/)
 
+## Thanks
+
+This docker container is based on the original nginx config included in [ansible-lanparty](https://github.com/ti-mo/ansible-lanparty).
+
 ## License
 
 The MIT License (MIT)
