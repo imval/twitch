@@ -18,6 +18,7 @@ docker run --name twitch -p 192.168.0.5:80:80 steamcache/twitch:latest
 ## Quick Explanation
 
 For a Twitch HLS cache to function on your network you need two services.
+
 * A Twitch cache service [This container](https://github.com/steamcache/twitch)
 * A special DNS service [steamcache-dns](https://github.com/steamcache/steamcache-dns)
 
@@ -25,9 +26,16 @@ The twitch cache transparently intercepts the Twitch traffic. If the stream is a
 
 The special DNS service handles DNS queries normally (recursively), except when they're about Twitch and in that case it responds that the twitch cache should handle it instead.
 
+Note: steamcache-dns does not currently support Twitch. It will be updated shortly.
+
 ## DNS Entries
 
 If you are running your own DNS servers, you will need to add the following DNS zones and records to your server in order to intercept the Twitch HLS streams.
+
+* *.usher.justin.tv
+* *.usher.twitch.tv
+* *.hls.twitch.tv
+* *.hls.ttvnw.net
 
 ## Suggested Hardware
 
