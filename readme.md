@@ -1,5 +1,7 @@
 # Twitch HLS Cache Docker Container
 
+This no-longer works. Twitch now uses HTTPS for HLS streaming
+
 ## Introduction
 
 This docker container acts a caching proxy server for HLS video streams from Twitch TV. For any network where multiple people are watching the same Twitch stream, this will result in saved bandwidth.
@@ -56,7 +58,7 @@ This docker container is based on the original nginx config included in [ansible
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Michael Smith, Robin Lewis, Brian Wojtczak, Jason Rivers
+Copyright (c) 2016 Jessica Smith, Robin Lewis, Brian Wojtczak, Jason Rivers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
